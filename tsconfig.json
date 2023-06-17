@@ -1,0 +1,46 @@
+{
+  "include": ["./src/**/*.ts"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": "src",
+    "outDir": "lib",
+
+    "declaration": true,
+    "importHelpers": true,
+    "noEmitHelpers": true,
+    "removeComments": true,
+    "sourceMap": true,
+
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": false,
+    "resolveJsonModule": true,
+    "useUnknownInCatchVariables": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "exactOptionalPropertyTypes": false,
+
+    "allowJs": false,
+    "checkJs": false,
+    "importsNotUsedAsValues": "remove",
+    "incremental": false,
+    "skipLibCheck": true,
+    "types": ["node"],
+
+    "lib": ["ESNext"],
+    "target": "ES2021",
+    "module": "commonjs",
+    "moduleResolution": "node",
+
+    "preserveWatchOutput": false
+  }
+}
