@@ -1,6 +1,6 @@
 {
   "name": "nestjs-conditional-exception-filter",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "type": "commonjs",
   "description": "A helper to allow creating exception filters based on conditions on the exception.",
   "main": "lib/index.js",
