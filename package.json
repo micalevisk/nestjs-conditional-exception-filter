@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:micalevisk/nestjs-conditional-exception-filter.git"
+    "url": "https://github.com/micalevisk/nestjs-conditional-exception-filter"
   },
   "keywords": [
     "nestjs"
