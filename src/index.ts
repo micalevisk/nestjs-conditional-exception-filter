@@ -12,13 +12,13 @@ export function filter<T extends Type<any> | Abstract<any>>(opts: {
   for: T,
   /** The condition in which the instance of that `for` class are caught. */
   when: (exception: T extends Type<infer E> | Abstract<infer E> ? E : unknown) => boolean,
-}) {
+}): T {
   class DynamicPredicatedBasedClass {
     static [Symbol.hasInstance](instance: unknown) {
       return instance instanceof opts.for && opts.when(instance as any)
     }
   }
 
-  return DynamicPredicatedBasedClass
+  return DynamicPredicatedBasedClass as T
 }
 
