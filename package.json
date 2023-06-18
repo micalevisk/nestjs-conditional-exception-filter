@@ -2,7 +2,7 @@
   "name": "nestjs-conditional-exception-filter",
   "version": "1.0.0",
   "type": "commonjs",
-  "description": "A helper to allow creating exception filters based on conditions on the exception.",
+  "description": "A utility to support creating exception filters based on conditions on the exception.",
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc --project ./tsconfig.json",
@@ -45,12 +45,7 @@
       "main"
     ]
   },
-  "peerDependencies": {
-    "@nestjs/core": "^8.x || ^9.3.x || ^10.x"
-  },
   "devDependencies": {
-    "@nestjs/core": "^9.3.9",
-    "@nestjs/devtools-integration": "^0.1.3",
     "@semantic-release/git": "^10.0.1",
     "@types/node": "^18.15.0",
     "semantic-release": "^20.1.1",

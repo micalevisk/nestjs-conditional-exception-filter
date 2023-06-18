@@ -1,4 +1,11 @@
-import type { Abstract, Type } from '@nestjs/common'
+// from @nestjs/common
+interface Type<T = any> extends Function {
+  new (...args: any[]): T
+}
+// from @nestjs/common
+interface Abstract<T = any> extends Function {
+  prototype: T
+}
 
 export function filter<T extends Type<any> | Abstract<any>>(opts: {
   /** Objects instance of this `for` class will be caught for the given `when` condition. */
