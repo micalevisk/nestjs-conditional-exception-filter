@@ -17,7 +17,7 @@ import { filter } from 'nestjs-conditional-exception-filter'
 
 @Catch(
   filter({
-    // Define for each instance this filter should be applied.
+    // Define for which instance this filter should be applied.
     // This is optional, so your filter no longer needs to work over class instances only
     for: YourErrorClass, 
     // And add your refined condition in this callback predicate function
