@@ -17,8 +17,11 @@ import { filter } from 'nestjs-conditional-exception-filter'
 
 @Catch(
   filter({
-    for: YourErrorClass,
-    when: (err) => true // add your condition here
+    // Define for each instance this filter should be applied.
+    // This is optional, so your filter no longer needs to work over class instances only
+    for: YourErrorClass, 
+    // And add your refined condition in this callback predicate function
+    when: (err) => true
   })
 )
 export class YourFilter implements ExceptionFilter {
