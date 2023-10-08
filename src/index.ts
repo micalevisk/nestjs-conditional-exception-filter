@@ -9,13 +9,15 @@ interface Abstract<T = any> extends Function {
 
 export function filter<T extends Type<any> | Abstract<any>>(opts: {
   /** Objects instance of this `for` class will be caught for the given `when` condition. */
-  for: T,
+  for?: T,
   /** The condition in which the instance of that `for` class are caught. */
   when: (exception: T extends Type<infer E> | Abstract<infer E> ? E : unknown) => boolean,
 }): T {
   class DynamicPredicatedBasedClass {
     static [Symbol.hasInstance](instance: unknown) {
-      return instance instanceof opts.for && opts.when(instance as any)
+      return opts.for
+        ? instance instanceof opts.for && opts.when(instance as any)
+        : opts.when(instance as any)
     }
   }
 
