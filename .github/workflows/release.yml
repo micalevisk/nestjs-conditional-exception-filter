@@ -26,10 +26,10 @@ jobs:
       ##########################################################################
       - name: 'Checkout the repository'
         uses: actions/checkout@v3
-      - name: 'Use node18'
+      - name: 'Use node20'
         uses: actions/setup-node@v3
         with:
-          node-version: '18.x'
+          node-version: '20.x'
           cache: 'npm'
       - run: 'npm ci --ignore-scripts'
       ##########################################################################
