@@ -17,6 +17,8 @@ jobs:
   release:
     runs-on: ubuntu-latest
     timeout-minutes: 3
+    permissions:
+      contents: read
     env:
       CI: 'true'
       NODE_ENV: 'development'
@@ -38,5 +40,5 @@ jobs:
       - name: 'Publish the lib'
         run: 'npm run release'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
