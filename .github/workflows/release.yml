@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 3
     permissions:
-      contents: read
+      contents: write
     steps:
       ##########################################################################
       ######################### Prepare the environment ########################
