@@ -47,8 +47,8 @@
   },
   "devDependencies": {
     "@semantic-release/git": "^10.0.1",
-    "@types/node": "^24.0.15",
+    "@types/node": "^24.2.0",
     "semantic-release": "^24.2.7",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.2"
   }
 }
