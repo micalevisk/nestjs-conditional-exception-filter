@@ -46,9 +46,9 @@
     ]
   },
   "devDependencies": {
-    "@semantic-release/git": "^10.0.1",
-    "@types/node": "^24.2.0",
-    "semantic-release": "^24.2.7",
-    "typescript": "^5.9.2"
+    "@semantic-release/git": "^11.0.1",
+    "@types/node": "^26.2.0",
+    "semantic-release": "^25.0.9",
+    "typescript": "^6.0.0"
   }
 }
